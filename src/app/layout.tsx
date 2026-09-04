@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Salman Malvasi | Portfolio",
-  description: "B.Tech CSE student building AI-driven fintech systems",
+  description: "B.Tech CSE student building data-driven systems, with a focus on financial analytics.",
 };
 
 export default function RootLayout({

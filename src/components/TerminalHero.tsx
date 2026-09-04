@@ -10,6 +10,9 @@ export function TerminalHero() {
     <section className="relative w-full min-h-[90vh] flex items-center bg-background overflow-hidden border-b border-primary/20">
       {/* Background Chart Animation */}
       <BackgroundChart />
+      
+      {/* Decorative Watermark */}
+      <HeroWatermark />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl border border-primary/30 rounded-lg bg-background/80 backdrop-blur-sm p-4 sm:p-6 shadow-[0_0_15px_rgba(0,255,156,0.1)]">
@@ -259,3 +262,22 @@ function LinkedinIcon({ size = 24 }: { size?: number }) {
   );
 }
 
+function HeroWatermark() {
+  return (
+    <motion.div 
+      className="absolute right-0 top-1/2 -translate-y-1/2 md:right-10 lg:right-32 z-0 hidden sm:flex select-none pointer-events-none opacity-[0.04] text-primary font-mono"
+      animate={{ 
+        y: ["-50%", "-55%", "-50%"],
+        rotate: [-2, 2, -2],
+      }}
+      transition={{ 
+        duration: 20, 
+        repeat: Infinity, 
+        ease: "easeInOut" 
+      }}
+    >
+      <span className="text-[12rem] md:text-[20rem] lg:text-[26rem] leading-none text-primary">₹</span>
+      <span className="text-[12rem] md:text-[20rem] lg:text-[26rem] leading-none text-secondary -ml-8 md:-ml-16 mt-16 md:mt-32">{"$"}</span>
+    </motion.div>
+  );
+}

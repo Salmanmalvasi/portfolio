@@ -36,7 +36,7 @@ export function ContactSection() {
             // contact
           </p>
           <h2 className="mt-3 text-3xl font-semibold text-foreground md:text-4xl">
-            Open to fintech & SWE internships
+            Open to data science, SWE, & financial analytics internships
           </h2>
           <p className="mt-4 max-w-2xl text-zinc-400">
             Reach out for internships, collaborations, or to talk RAG systems,

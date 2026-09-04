@@ -1,13 +1,13 @@
 export const profile = {
   name: "Salman Malvasi",
   tagline:
-    "B.Tech CSE student building AI-driven fintech systems — from corrective RAG over SEC filings to multi-agent financial analysis engines.",
+    "B.Tech CSE student building data-driven systems, with a focus on financial analytics — from corrective RAG over SEC filings to multi-agent engines.",
   terminal: {
-    whoami: "CS student @ VIT Chennai, fintech + data science track",
+    whoami: "CS student @ VIT Chennai, data science & analytics — applied to finance.",
     focus: '["RAG systems", "multi-agent architectures", "payment infra", "Android/Kotlin"]',
   },
   about: [
-    "CS undergrad at VIT Chennai (CGPA 8.74), committed to fintech and data science as a career path — deliberately ruling out generic app/web dev as the primary focus.",
+    "CS undergrad at VIT Chennai (CGPA 8.74), committed to data science and analytics as a career path, specifically applied to the finance domain — deliberately ruling out generic app/web dev as the primary focus.",
   ],
   contact: {
     email: "salmanmalvasi3@gmail.com",

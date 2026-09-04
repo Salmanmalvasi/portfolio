@@ -9,7 +9,7 @@ export function AboutSection() {
     <SectionWrapper
       id="about"
       title="About"
-      subtitle="Focused on fintech systems, not generic app churn."
+      subtitle="Focused on data science and financial analytics, not generic app churn."
     >
       <div className="grid gap-6 md:grid-cols-2">
         {profile.about.map((paragraph, index) => (
