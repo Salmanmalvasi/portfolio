@@ -3,6 +3,11 @@ import { TerminalHero } from "@/components/TerminalHero";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ArchitectureGraph } from "@/components/ArchitectureGraph";
 import { Experience } from "@/components/Experience";
+import { AboutSection } from "@/components/sections/about";
+import { SkillsSection } from "@/components/sections/skills";
+import { AchievementsSection } from "@/components/sections/achievements";
+import { LeadershipSection } from "@/components/sections/leadership";
+import { ContactSection } from "@/components/sections/contact";
 
 const PROJECTS = [
   {
@@ -21,10 +26,10 @@ const PROJECTS = [
   },
   {
     title: "StudentCC",
-    pitch: "Credit card recommendation engine for students",
+    pitch: "Offline-first Android app with 10,000+ active users",
     stack: ["Android", "Java", "SQLite", "Firebase", "MVVM"],
     githubUrl: "https://github.com/Salmanmalvasi/StudentCC",
-    details: "The problem: Owned this app's full roadmap to 10,000+ active users, including responding when a competing app launch caused a ~10% retention drop.\n\nHow it works: Offline-first architecture — SQLite as the local source of truth with automatic sync to Firebase on connectivity restoration, structured with MVVM. CI/CD via GitHub Actions automates builds and enforces code quality.\n\nWhy it's hard: Diagnosed the retention drop, shipped two differentiated features (a faculty cabin locator and an in-app time-pass game) to re-engage lapsing users, and recovered 7 of the 10 lost retention points — validated with real usage data."
+    details: "Offline-first Android app with 10,000+ active users. Owned the full product roadmap; when a competitor launch caused a ~10% retention drop, shipped a faculty cabin locator and an in-app time-pass game, recovering 7 of the 10 lost retention points."
   }
 ];
 
@@ -34,7 +39,11 @@ export default function Home() {
       <TickerTape />
       <TerminalHero />
       
-      <Experience />
+      <AboutSection />
+
+      <section className="py-20 border-t border-primary/20 bg-background/50 relative">
+        <Experience />
+      </section>
       
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="mb-12">
@@ -62,6 +71,11 @@ export default function Home() {
           <ArchitectureGraph />
         </div>
       </section>
+
+      <SkillsSection />
+      <AchievementsSection />
+      <LeadershipSection />
+      <ContactSection />
     </main>
   );
 }

@@ -18,10 +18,10 @@ interface NodeProps {
 
 const nodes = [
   { id: "in", label: "Ticker Input", desc: "Receives real-time or historical ticker symbol and timeframe.", x: 50, y: 150, type: "neutral" as const },
-  { id: "a1", label: "Extractor Agent", desc: "Pulls financial statements, news, and sentiment data.", x: 300, y: 50, type: "secondary" as const },
+  { id: "a1", label: "Extractor Agent", desc: "Pulls data from SEC filings and earnings call transcripts.", x: 300, y: 50, type: "secondary" as const },
   { id: "a2", label: "Comparator Agent", desc: "Analyzes metrics against peer companies in the sector.", x: 300, y: 150, type: "secondary" as const },
   { id: "a3", label: "Verifier Agent", desc: "Cross-checks facts and flags anomalies or hallucinations.", x: 300, y: 250, type: "secondary" as const },
-  { id: "out", label: "Output", desc: "Synthesizes final actionable report with confidence scores.", x: 550, y: 150, type: "primary" as const },
+  { id: "out", label: "Output", desc: "Synthesizes final actionable report.", x: 550, y: 150, type: "primary" as const },
 ];
 
 const edges = [

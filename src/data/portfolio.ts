@@ -150,20 +150,12 @@ export const sectorLensArchitecture = {
 };
 
 export const skills = {
-  Languages: ["Python", "Kotlin", "Java", "JavaScript", "TypeScript"],
-  "AI/ML": [
-    "RAG pipelines",
-    "Multi-agent systems",
-    "LLM APIs (Gemini)",
-    "RAGAS evaluation",
-  ],
-  Backend: ["FastAPI", "Node.js", "Express"],
-  Mobile: ["Android (Kotlin)", "Flutter"],
-  "Data/Fintech": [
-    "SEC EDGAR / XBRL",
-    "Payment reconciliation",
-    "Financial risk metrics",
-  ],
+  "Languages": ["Java", "Python", "Kotlin", "JavaScript", "TypeScript", "SQL", "C/C++", "R"],
+  "Mobile": ["Android (Kotlin)", "Flutter"],
+  "Web & Backend": ["Node.js", "Express", "FastAPI", "React", "Socket.io"],
+  "Databases": ["PostgreSQL", "SQLite", "Firebase", "Supabase"],
+  "DevOps & SDLC": ["Git", "GitHub Actions", "CI/CD", "Agile"],
+  "Cloud & AI": ["AWS EC2/S3/IAM/VPC", "Azure Fundamentals", "GenAI", "Prompt Engineering", "LangChain", "CrewAI"]
 };
 
 export const achievements = [
@@ -176,10 +168,6 @@ export const achievements = [
     org: "IBM",
   },
   {
-    title: "Mathematics Olympiad (IOM 2023–24)",
-    org: "1st in class · State Rank 18 · West Zone",
-  },
-  {
     title: "Advanced to Round 4, shortlisted among top 300 of 3,00,000+ registrations",
     org: "Adobe Hackathon",
   },
@@ -188,7 +176,7 @@ export const achievements = [
 export const leadership = [
   {
     role: "VIT Android Club",
-    detail: "Overall POC for LushRewind, Tech POC for FeatureQuest",
+    detail: "Overall POC for LushRewind, Tech POC for FeatureQuest 2026, leading technical operations and website development for two events with 300+ participants.",
   }
 ];
 

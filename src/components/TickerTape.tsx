@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const TICKER_ITEMS = [
-  { text: "FINRAG", highlight: "+12.4%", type: "delta" },
-  { text: "STUDENTCC", highlight: "10K+ USERS", type: "neutral" },
   { text: "SECTORLENS", highlight: "MULTI-AGENT", type: "neutral" },
-  { text: "AGENTLEDGER", highlight: "NEW", type: "tag" },
-  { text: "RECON ENGINE", highlight: "IN PROGRESS", type: "tag" },
+  { text: "STUDENTCC", highlight: "10K+ USERS", type: "delta" },
+  { text: "PAYMENT RECON ENGINE", highlight: "RULE-BASED", type: "neutral" },
+  { text: "ASPIRENET", highlight: "INTERNSHIP", type: "tag" },
+  { text: "ADOBE HACKATHON", highlight: "TOP 300", type: "tag" },
 ];
 
 export function TickerTape() {

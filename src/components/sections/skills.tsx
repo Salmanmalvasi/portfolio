@@ -19,7 +19,7 @@ export function SkillsSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            className="rounded-xl border border-zinc-800 bg-[#0d1117]/60 p-5"
+            className="rounded-xl border border-primary/20 bg-background/50 p-5 shadow-[0_0_15px_rgba(0,255,156,0.03)] hover:border-primary/40 transition-colors"
           >
             <p className="font-mono text-xs uppercase tracking-[0.25em] text-secondary">
               {category}
@@ -28,7 +28,7 @@ export function SkillsSection() {
               {items.map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-2 font-mono text-sm text-zinc-300"
+                  className="flex items-center gap-2 font-mono text-sm text-foreground/80"
                 >
                   <span className="text-primary">▸</span>
                   {item}

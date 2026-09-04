@@ -19,7 +19,7 @@ export function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.45, delay: index * 0.1 }}
-            className="rounded-xl border border-zinc-800 bg-[#0d1117]/60 p-6 leading-relaxed text-zinc-300"
+            className="rounded-xl border border-primary/20 bg-background/50 p-6 leading-relaxed text-foreground/80 shadow-[0_0_15px_rgba(0,255,156,0.03)]"
           >
             {paragraph}
           </motion.div>

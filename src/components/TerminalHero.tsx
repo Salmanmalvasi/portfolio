@@ -171,7 +171,7 @@ function BlinkingCursor() {
 function CtaButtons() {
   return (
     <div className="flex flex-wrap gap-4 text-sm mt-4">
-      <a href="https://github.com/salman-malvasi" target="_blank" rel="noreferrer" className="flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded border border-primary/30 hover:bg-primary hover:text-background transition-colors">
+      <a href="https://github.com/Salmanmalvasi" target="_blank" rel="noreferrer" className="flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded border border-primary/30 hover:bg-primary hover:text-background transition-colors">
         <GithubIcon size={16} />
         <span>GitHub</span>
       </a>
@@ -179,14 +179,16 @@ function CtaButtons() {
         <LinkedinIcon size={16} />
         <span>LinkedIn</span>
       </a>
-      <a href="mailto:salman@example.com" className="flex items-center space-x-2 bg-background text-foreground px-4 py-2 rounded border border-foreground/30 hover:border-foreground transition-colors">
+      <a href="mailto:salmanmalvasi3@gmail.com" className="flex items-center space-x-2 bg-background text-foreground px-4 py-2 rounded border border-foreground/30 hover:border-foreground transition-colors">
         <Mail size={16} />
         <span>Email</span>
       </a>
+      {/* 
       <a href="/resume.pdf" className="flex items-center space-x-2 bg-secondary/10 text-secondary px-4 py-2 rounded border border-secondary/30 hover:bg-secondary hover:text-background transition-colors">
         <FileText size={16} />
         <span>Resume</span>
-      </a>
+      </a> 
+      */}
     </div>
   );
 }
