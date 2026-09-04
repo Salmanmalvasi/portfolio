@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Mail, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { FloatingSymbol } from "@/components/FloatingSymbol";
 
 export function TerminalHero() {
   return (
@@ -11,8 +12,10 @@ export function TerminalHero() {
       {/* Background Chart Animation */}
       <BackgroundChart />
       
-      {/* Decorative Watermark */}
-      <HeroWatermark />
+      {/* Scattered Decorative Symbols */}
+      <FloatingSymbol symbol="₹" className="top-1/4 left-10 md:left-20" duration={12} delay={0} />
+      <FloatingSymbol symbol="$" className="top-1/3 right-12 md:right-32" duration={14} delay={2} mobileHidden />
+      <FloatingSymbol symbol="₹" className="bottom-1/4 right-20 md:right-40" duration={15} delay={5} />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-3xl border border-primary/30 rounded-lg bg-background/80 backdrop-blur-sm p-4 sm:p-6 shadow-[0_0_15px_rgba(0,255,156,0.1)]">
@@ -259,25 +262,5 @@ function LinkedinIcon({ size = 24 }: { size?: number }) {
       <rect width="4" height="12" x="2" y="9" />
       <circle cx="4" cy="4" r="2" />
     </svg>
-  );
-}
-
-function HeroWatermark() {
-  return (
-    <motion.div 
-      className="absolute right-0 top-1/2 -translate-y-1/2 md:right-10 lg:right-32 z-0 hidden sm:flex select-none pointer-events-none opacity-[0.04] text-primary font-mono"
-      animate={{ 
-        y: ["-50%", "-55%", "-50%"],
-        rotate: [-2, 2, -2],
-      }}
-      transition={{ 
-        duration: 20, 
-        repeat: Infinity, 
-        ease: "easeInOut" 
-      }}
-    >
-      <span className="text-[12rem] md:text-[20rem] lg:text-[26rem] leading-none text-primary">₹</span>
-      <span className="text-[12rem] md:text-[20rem] lg:text-[26rem] leading-none text-secondary -ml-8 md:-ml-16 mt-16 md:mt-32">{"$"}</span>
-    </motion.div>
   );
 }

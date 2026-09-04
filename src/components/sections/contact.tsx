@@ -2,6 +2,7 @@
 
 import { profile } from "@/data/portfolio";
 import { motion } from "framer-motion";
+import { FloatingSymbol } from "@/components/FloatingSymbol";
 
 export function ContactSection() {
   const links = [
@@ -23,8 +24,11 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="border-t border-zinc-800 py-20 md:py-28">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="contact" className="border-t border-zinc-800 py-20 md:py-28 relative overflow-hidden">
+      <FloatingSymbol symbol="$" className="top-1/4 right-[15%]" duration={16} delay={0} />
+      <FloatingSymbol symbol="₹" className="bottom-1/3 left-[10%]" duration={14} delay={4} mobileHidden />
+      
+      <div className="mx-auto max-w-6xl px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

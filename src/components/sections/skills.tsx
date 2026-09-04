@@ -3,6 +3,7 @@
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { skills } from "@/data/portfolio";
 import { motion } from "framer-motion";
+import { FloatingSymbol } from "@/components/FloatingSymbol";
 
 export function SkillsSection() {
   return (
@@ -10,8 +11,10 @@ export function SkillsSection() {
       id="skills"
       title="Skills / Stack"
       subtitle="Grouped by domain — no fake progress bars."
+      className="relative"
     >
-      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <FloatingSymbol symbol="$" className="top-10 right-[10%] hidden lg:flex" duration={13} delay={1} />
+      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3 relative z-10">
         {Object.entries(skills).map(([category, items], index) => (
           <motion.div
             key={category}

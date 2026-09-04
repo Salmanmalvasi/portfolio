@@ -3,6 +3,7 @@
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { achievements } from "@/data/portfolio";
 import { motion } from "framer-motion";
+import { FloatingSymbol } from "@/components/FloatingSymbol";
 
 export function AchievementsSection() {
   return (
@@ -10,8 +11,10 @@ export function AchievementsSection() {
       id="achievements"
       title="Achievements"
       subtitle="Certifications and competition results."
+      className="relative"
     >
-      <div className="grid gap-4 md:grid-cols-3">
+      <FloatingSymbol symbol="₹" className="bottom-10 left-[5%]" duration={11} delay={3} mobileHidden />
+      <div className="grid gap-4 md:grid-cols-3 relative z-10">
         {achievements.map((item, index) => (
           <motion.div
             key={item.title}
