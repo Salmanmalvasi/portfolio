@@ -8,7 +8,6 @@ export const profile = {
   },
   about: [
     "CS undergrad at VIT Chennai (CGPA 8.74), committed to fintech and data science as a career path — deliberately ruling out generic app/web dev as the primary focus.",
-    "Currently building out a fintech-systems portfolio and applying for software engineering / fintech internships (UBS GTO, Revolut, Razorpay, and others).",
   ],
   contact: {
     email: "salmanmalvasi3@gmail.com",
